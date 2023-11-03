@@ -1,10 +1,10 @@
 # 配置里面 线上地址写法：http://xxx，本地地址。可以在`source`文件夹下创建目录，假如创建img和videos目录，则引用的时候使用 /img/xxx 写法, /videos/xxx  ... 
 
 # 菜单
-# menu:
-#   Home:
-#     url: /
-#     icon: fas fa-home
+menu:
+  Home:
+    url: /
+    icon: fas fa-home
 #   Archives:
 #     url: /archives
 #     icon: fas fa-archive
@@ -16,18 +16,18 @@
 #     icon: fas fa-bookmark
 #   Friends:
 #     url: /friends
-#   更多: # 这是二级菜单的写法
-#    icon: fas fa-link
-#    children:
+  More: # 这是二级菜单的写法
+   icon: fas fa-link
+   children:
 #     - name: 图库
 #       url: /gallery
 #       icon: fas fa-music
 #     - name: 友情连接
 #       url: /huoban
 #       icon: fas fa-film
-#     - name: 关于我
-#       url: /me
-#       icon: fas fa-film
+    - name: 关于我
+      url: "https://github.com/szw0407"
+      icon: fas fa-film
 #     - name: 百度
 #       url: http://baidu.com
 #       icon: fas fa-film
@@ -148,7 +148,7 @@ sidebar:
           unit: '篇'
         runtime:
           on: true
-          data: '2020/01/01'    # 填写建站日期
+          data: '2023/01/10'    # 填写建站日期
           text: '已运行时间：'
           unit: '天'
         wordcount:
@@ -158,11 +158,11 @@ sidebar:
         visitcounter:
           service: busuanzi # only busuanzi
           siteuv:
-            on: true
+            on: false
             text: '本站访客数：'
             unit: '人'
           sitepv:
-            on: true
+            on: false
             text: '本站总访问量：'
             unit: '次'
         lastupd:
@@ -232,7 +232,7 @@ fancybox:
 
 # 统计网站访问数量
 busuanzi:
-  on: true
+  on: false
 
 # 标签页和分类页中，显示这个标签或者分类在文章中出现的次数
 show_count: true
@@ -358,8 +358,8 @@ copyright:
 # 首页座右铭
 motto:
   on: true
-  title: ''
-  content: ''
+  title: '雨霖铃'
+  content: '今宵酒醒何处？杨柳岸，晓风残月。'
   background: 'url("https://img10.360buyimg.com/ddimg/jfs/t1/166587/8/21344/72069/6088c24fEda5fdeb6/f9730ab637b7ca47.png")' # url("xxx") or red or #000 or rgba() ..
 
 # 首页公告
@@ -369,10 +369,10 @@ notice:
   title: '公告'
   background: 'url("https://img10.360buyimg.com/ddimg/jfs/t1/166587/8/21344/72069/6088c24fEda5fdeb6/f9730ab637b7ca47.png")' # url("xxx") or red or #000 or rgba() ..
   list: # list相当于数组对象，[{title:'xx',date: 'xx', url: 'xxx', color: 'red'}]根据自己实际情况，增加或者删除
-    # - title: '#博客更新到2.0了'
-    #   date: '2021-04-28'
-    #   url: '/archives'   # 可以为空, 也可以是本地页面地址如 '/archives'
-    #   color: red   # 字体颜色
+    - title: '#博客更新到Hexo了'
+      date: '2023/11/04'
+      url: ''   # 可以为空, 也可以是本地页面地址如 '/archives'
+      color: lightblue   # 字体颜色
     # - title: '#新增 轮播图支持三种模式了，功能也增强了 ~'
     #   date: '2021-04-28'
     #   url: 'http://baidu.com'
