@@ -197,8 +197,8 @@ swiper:
   defaultImg:  # 图片，没有则随机选取
   defaultVideo: '' # video，min-width:992px show
   defaultVideoLoadingImg: 'https://img14.360buyimg.com/ddimg/jfs/t1/175057/18/19582/882056/60ee7ac8Ef0045710/202d2ad878684a3b.gif' # video loading img -- use .gif img, 视频预加载动画，使用gif图片作为loading，为空则视频没有预加载动画
-  defaultTile: '' # 标题
-  defaultDesc: [] #描 述，例如 ['煮酒洗净尘嚣，论知交', '万般付之一笑，共偕老']
+  defaultTile: 'Welcome to my website' # 标题
+  defaultDesc: ['1','2'] #描 述，例如 ['煮酒洗净尘嚣，论知交', '万般付之一笑，共偕老']
   defaultLeftBtnText: '' # 左边按钮文字, 空字符串则不显示
   defaultLeftBtnLink: '' # 左边按钮链接 
   defaultRightBtnText: '' # 右边按钮的文字，空字符串则不显示
@@ -402,8 +402,8 @@ topArticle:
 # 归档，标签，分类页图片上的打字效果
 typed:
   on: true
-  loop: false # 是否循环
-  showCursor: false # 是否显示光标
+  loop: true # 是否循环
+  showCursor: true # 是否显示光标
   startDelay: 100 # 开始延迟
   typeSpeed: 100 # 打字速度
   backSpeed: 50 # 删除速度
